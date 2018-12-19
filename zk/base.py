@@ -305,7 +305,7 @@ class ZK(object):
         year, month, day, hour, minute, second = unpack("6B", timehex)
         year += 2000
         d = datetime(year, month, day, hour, minute, second)
-        return d
+        return timehex
     def __encode_time(self, t):
         """Encode a timestamp so that it can be read on the timeclock
         """
