@@ -299,7 +299,7 @@ class ZK(object):
 
         d = datetime(year, month, day, hour, minute, second)
 
-        return d
+        return t
     def __decode_timehex(self, timehex):
         """timehex string of six bytes"""
         year, month, day, hour, minute, second = unpack("6B", timehex)
