@@ -299,13 +299,13 @@ class ZK(object):
 
         d = datetime(year, month, day, hour, minute, second)
 
-        return t
+        return d
     def __decode_timehex(self, timehex):
         """timehex string of six bytes"""
         year, month, day, hour, minute, second = unpack("6B", timehex)
         year += 2000
         d = datetime(year, month, day, hour, minute, second)
-        return timehex
+        return d
     def __encode_time(self, t):
         """Encode a timestamp so that it can be read on the timeclock
         """
