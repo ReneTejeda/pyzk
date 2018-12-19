@@ -1517,7 +1517,7 @@ class ZK(object):
                     user_id = str(uid) #TODO revisar pq
                 else:
                     user_id = tuser[0].user_id
-                timestamp = self.__decode_time(timestamp)
+                #timestamp = self.__decode_time(timestamp)
                 attendance = Attendance(user_id, timestamp, status, punch, uid) # punch?
                 attendances.append(attendance)
         elif record_size == 16: # extended
